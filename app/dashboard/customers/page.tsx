@@ -1,6 +1,6 @@
 import { Metadata } from "next"
 export const metadata: Metadata = {
-    title: 'Customer | Acme Dashboard'
+    title: 'Customer'
 }
 
 export default function CustomersPage() {
