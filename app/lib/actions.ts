@@ -101,7 +101,7 @@ export async function updateInvoice(id: string, prevState: State , formData: For
 
 }
 
-export async function deleteInvoice(id: string) {
+export async function deleteInvoice(id: string): Promise<void> {
   try {
     await sql`DELETE FROM invoices WHERE id = ${id}`;
   } catch (error) {
