@@ -5,7 +5,12 @@ import { lusitana } from '@/app/ui/fonts';
 import { fetchCardData} from '../../lib/data';
 import { Suspense } from 'react';
 import { RevenueChartSkeleton , LatestInvoicesSkeleton } from '@/app/ui/skeletons';
- import CardWrapper from '@/app/ui/dashboard/cards';
+import CardWrapper from '@/app/ui/dashboard/cards';
+import { Metadata } from "next";
+export const metadata: Metadata = {
+  title: 'Dashboard'
+}
+
 export default async function Page() {
     const {
         numberOfCustomers,
